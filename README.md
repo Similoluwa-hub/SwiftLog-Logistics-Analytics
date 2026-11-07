@@ -27,6 +27,61 @@ The goal is to transform operational data into actionable insights using data pr
 - **Microsoft Excel:** Data inspection and supporting analysis.
 - **GitHub:** Project documentation and version tracking.
 
+# SwiftLog Logistics: Supply Chain Analytics & Business Intelligence
+
+**Programme:** AnalystLab Africa Experience Lab, Week 5
+**Track:** Data Analytics
+**Author:** Oluwayomi Precious Similoluwa
+**Tool:** Power BI
+
+## About the project
+
+SwiftLog Logistics Limited is a fast-growing Nigerian logistics company. As it has grown, it has run into late deliveries, inventory problems, uneven supplier performance and little visibility for management.
+
+My task is to turn SwiftLog's raw data into a Power BI solution that helps leadership see what is happening, find bottlenecks and make better decisions.
+
+## What I'm building
+
+- A cleaned, connected data model across customers, orders, order items, products, inventory, warehouses, shipments, deliveries, suppliers and returns
+- KPIs written in DAX (revenue, orders, delivery time, on-time rate, return rate, inventory and more)
+- A five-page interactive dashboard: Executive, Customers, Inventory & Warehouse, Shipment & Delivery, Supplier & Product
+- An executive report and presentation with recommendations
+
+## Status
+
+Complete. The data is cleaned and modelled, the five-page Power BI dashboard is built, and the executive report and presentation are written.
+
+## Key findings
+
+- Only about a third of shipments arrive on time, and delays are similar in every city and warehouse, so the cause is process, not place.
+- Late delivery is the most common reason for returns.
+- Stock is large but moves slowly, while some warehouse and product pairs run low.
+- Ibadan has the most customers but no warehouse.
+
+## Assumptions and Data Limitations
+
+Real data is rarely perfect, so these are the assumptions I'm working with:
+
+- **Suppliers:** The data has no direct link between suppliers and products or shipments. I treat the suppliers file as a standalone reference table. Any supplier analysis will rely on clearly stated assumptions.
+- **Warehouse capacity:** No capacity figures were provided. Utilisation is estimated from proxies: stock quantity held, number of unique products and shipments handled. It is an estimate, not true capacity.
+- **Inventory records:** Repeated warehouse and product combinations are stock movements, not duplicates. I sum quantities per warehouse and product and do not delete them.
+- **Data dictionary:** The dictionary is simplified, so meanings such as "Delayed" and "On Time" are inferred from column names and documented in the report.
+
+## Folder structure
+
+```
+Week5_DataAnalytics_SwiftLog_OluwayomiPrecious/
+├── Data/            original datasets
+├── Dashboard/       SwiftLog_Analytics.pbix
+├── Report/          Executive_BI_Report.pdf, Dashboard_Screenshots.pdf
+├── Presentation/    Executive_Presentation.pptx
+├── Images/
+├── README.md
+└── References/
+```
+
+---
+*Part of the AnalystLab Africa Experience Lab. #AnalystLabAfrica*
 ## Datasets
 
 The project specification identifies the following datasets:
